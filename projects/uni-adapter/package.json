@@ -1,0 +1,19 @@
+{
+    "name": "@linktop/uni-adapter",
+    "version": "0.0.0",
+    "description": "Clever Engine Tracer",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint 'src/**/*.{js,ts,tsx}'"
+    },
+    "devDependencies": {
+        "@dcloudio/types": "^3.4.8",
+        "@types/uni-app": "^1.4.8"
+    }
+}
