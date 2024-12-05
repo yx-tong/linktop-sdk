@@ -1,9 +1,13 @@
 {
     "name": "@linktop/uni-adapter",
-    "version": "0.0.0",
+    "version": "0.0.5",
     "description": "Clever Engine Tracer",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.org/"
@@ -15,5 +19,8 @@
     "devDependencies": {
         "@types/uni-app": "^1.4.8",
         "vite": "^6.0.2"
+    },
+    "dependencies": {
+        "crypto-js": "^4.2.0"
     }
 }

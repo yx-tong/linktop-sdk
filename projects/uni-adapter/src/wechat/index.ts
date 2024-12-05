@@ -1,0 +1,1 @@
+export {wechatLoginRequest} from "./login"
