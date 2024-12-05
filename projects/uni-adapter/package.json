@@ -11,7 +11,8 @@
     },
     "scripts": {
         "build": "tsc",
-        "lint": "eslint 'src/**/*.{js,ts,tsx}'"
+        "lint": "eslint 'src/**/*.{js,ts,tsx}'",
+        "prepublishOnly": "npm run build"
     },
     "devDependencies": {
         "@types/uni-app": "^1.4.8"
