@@ -1,6 +1,5 @@
 import {getAccessToken} from "./token";
 
-declare const API_HOST: string;
 type Method = 'OPTIONS' | 'GET' | 'HEAD' | 'POST' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT';
 
 async function uniRequest(method: Method, url: string, body: any) {
@@ -24,8 +23,7 @@ async function uniRequest(method: Method, url: string, body: any) {
                     resolve(null)
                 }
             },
-            fail: (err) => {
-                console.error(err);
+            fail: () => {
                 resolve(null)
             }
         })
@@ -33,7 +31,9 @@ async function uniRequest(method: Method, url: string, body: any) {
 }
 
 export async function apiRequest<T>(method: Method, endpoint: string, data: any): Promise<T | null> {
-    const result: any = await uniRequest(method, `${API_HOST}${endpoint}`, data);
+    const host = import.meta.env.VITE_API_HOST;
+    const path = endpoint.replace(/^\/+/, "")
+    const result: any = await uniRequest(method, `${host}/${path}`, data);
     if (result == null) {
         return null;
     }

@@ -13,7 +13,7 @@
         "lint": "eslint 'src/**/*.{js,ts,tsx}'"
     },
     "devDependencies": {
-        "@dcloudio/types": "^3.4.8",
-        "@types/uni-app": "^1.4.8"
+        "@types/uni-app": "^1.4.8",
+        "vite": "^6.0.2"
     }
 }
