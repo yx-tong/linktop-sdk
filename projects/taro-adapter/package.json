@@ -1,9 +1,10 @@
 {
-    "name": "@lingames/taro-tracer",
-    "version": "0.0.3",
+    "name": "@linktop/taro-adapter",
+    "version": "0.0.0",
     "description": "Clever Engine Tracer",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "license": "MIT",
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.org/"
@@ -13,6 +14,12 @@
         "lint": "eslint 'src/**/*.{js,ts,tsx}'"
     },
     "dependencies": {
-        "@tarojs/taro": "4.0.8"
+        "@tarojs/components": "4.0.8",
+        "@tarojs/taro": "4.0.8",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.13"
     }
 }

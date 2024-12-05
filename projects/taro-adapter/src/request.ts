@@ -31,7 +31,7 @@ async function uniRequest(method: Method, url: string, body: any) {
 }
 
 export async function apiRequest<T>(method: Method, endpoint: string, data: any): Promise<T | null> {
-    const host = process.env.VITE_API_HOST;
+    const host = process.env.TARO_APP_API_HOST;
     const path = endpoint.replace(/^\/+/, "")
     const result: any = await uniRequest(method, `${host}/${path}`, data);
     if (result == null) {

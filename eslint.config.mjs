@@ -25,7 +25,8 @@ export default [
             'curly': ['error', 'multi-line'],
             "no-unused-vars": "warn",
             "quote-props": ["warn", "as-needed"],
-            "no-undef": "warn"
+            "no-undef": "warn",
+            "implicit-arrow-linebreak": "off"
         },
     },
     {

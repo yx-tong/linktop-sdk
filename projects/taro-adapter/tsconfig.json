@@ -6,7 +6,8 @@
         "moduleResolution": "node",
         "allowJs": false,
         "declaration": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "types": ["node"]
     },
     "include": [
         "src/index.ts"
